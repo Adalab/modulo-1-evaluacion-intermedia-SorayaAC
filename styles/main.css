@@ -1,5 +1,7 @@
 :root{
-
+    --font-size-options:16px;
+    --font-size-title: 30px;
+    --font-size-dsk: 40px;
 }
 body{
     font-family: 'Rubik', sans-serif;  
@@ -18,16 +20,12 @@ body{
     margin-top: 10px;
     margin-bottom: 23px;
 }
-.menu-nav{   
-    
-}
 .menu-link{
     text-decoration: none;
     color: #4a4a4a;
-    font-size: 16px;
+    font-size: var(--font-size-options);
     text-transform: uppercase;
-    padding: 20px;
-    
+    padding: 20px;  
 }
 main{
     margin-top: 13px;
@@ -37,20 +35,12 @@ main{
     display: flex;
     display: row;
     justify-content: center;
-    align-items: center;
-    
-}
-.title{
-    display:block;
-    width: 200px;
-    word-wrap:nowrap;     
+    align-items: center;   
 }
 .title-text{
     font-weight: bold;
-    font-size: 30px;
-    color:#FFFFFF;
-    word-break: break-all;
-    
+    font-size: var(--font-size-title);
+    color:#FFFFFF;    
 }
 @media all and (min-width: 768px) {
     .menu-fixed{
@@ -68,6 +58,7 @@ main{
     }
     .menu-link{
         margin-left: 30px;
-    }
-
-  }
+    } 
+    .title-text{
+        font-size: var(--font-size-dsk);
+}
