@@ -16,7 +16,7 @@ body{
 .logo{
     width: 155px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 23px;
 }
 .menu-nav{   
     
@@ -27,21 +27,30 @@ body{
     font-size: 16px;
     text-transform: uppercase;
     padding: 20px;
-    margin-bottom: 13px;
+    
 }
 main{
+    margin-top: 13px;
     background-color:#3CDBC0;
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    display: row;
     justify-content: center;
     align-items: center;
-
+    
+}
+.title{
+    display:block;
+    width: 200px;
+    word-wrap:nowrap;     
 }
 .title-text{
+    font-weight: bold;
     font-size: 30px;
     color:#FFFFFF;
+    word-break: break-all;
+    
 }
 @media all and (min-width: 768px) {
     .menu-fixed{
@@ -56,6 +65,9 @@ main{
         margin-left: 30px;
         margin-bottom: 20px;
         margin-top: 20px;
+    }
+    .menu-link{
+        margin-left: 30px;
     }
 
   }
