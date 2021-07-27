@@ -40,7 +40,10 @@ main{
 .title-text{
     font-weight: bold;
     font-size: var(--font-size-title);
-    color:#FFFFFF;    
+    color:#FFFFFF;  
+    text-transform: capitalize; 
+    word-spacing: 100vw; /* para dividir el texto */
+    text-align: center; 
 }
 @media all and (min-width: 768px) {
     .menu-fixed{
